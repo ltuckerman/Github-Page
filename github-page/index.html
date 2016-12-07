@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowell's Terrible Landing Page</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+
+  </head>
+  <body>
+<section class="row">
+<h1 class="columns small-9 large-9">Lowell’s Terrible Landing Page</h1>
+<img class="circleimage" src="image/lowell.jpg" alt="" class="columns small-12 large-12" />
+</section>
+
+<iframe src="https://docs.google.com/presentation/d/1-n8w3QJoDC2anMp1BlRE3QFJzacSwOTpRXfRrgqNTFE/embed?start=false&loop=false&delayms=15000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<p>Link to Redesigned Website: <a href="sungalleryredesign">Sun Gallery Redesigned Webite</a></p>
+
+<section>
+  Welcome to Lowell's Terrible Landing Page. <span id="greeting">hello!</span>
+</section>
+
+<script language="JavaScript">
+   var myDate = new Date();
+   /* hour is before noon */
+   if ( myDate.getHours() < 12 )
+   {
+       document.getElementById('greeting').innerHTML = "Good Morning Ian!";
+   }
+   else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+   if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+   {
+       document.getElementById('greeting').innerHTML = "Good Afternoon Ian!";
+   }
+   else  /* the hour is after 5pm, so it is between 6pm and midnight */
+   if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+   {
+      document.getElementById('greeting').innerHTML = "Good Evening Ian!";
+   }
+   else  /* the hour is not between 0 and 24, so something is wrong */
+   {
+       document.getElementById('greeting').innerHTML = "I think I screw up Ian!";
+   }
+   </script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

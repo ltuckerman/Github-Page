@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  border:5px solid green;
+  border-radius: 100px;
+}
+
+img {
+  border:10px solid green;
+  width: 25%;
+  height: 25%;
+}
+iframe {
+  border:0px;
+}
+#greeting{color:red;}
+
+.circleimage {
+  width: 685px;
+  heighth: 685px;
+  border-radius: 50%;
+}
+h1 {
+    font-family: "David Libre", Times, serif;
+    font-size: 52px;
+}
+section {
+    font-family: "David Libre", Times, serif;
+    font-size: 26px;
+}
